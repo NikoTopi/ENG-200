@@ -32,7 +32,7 @@ float calculateVelocity(float currentDistance) {
   if (dt <= 0) return 0;
 
   // Convert servo angle offset from forward direction to radians
-  float theta = absa(servAng - 90) * M_PI / 180.0;
+  float theta = abs(servAng - 90) * M_PI / 180.0;
 
   // Project distances along forward direction
   float posNow = currentDistance * cos(theta);
